@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    //默认路径：登录
+    //默认路径：
     path: "/",
     meta: { activeRoute: "/", navName: "index" },
     redirect: "/login"
