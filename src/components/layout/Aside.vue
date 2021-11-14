@@ -61,21 +61,35 @@ export default {
             FunctionID: 14,
             FunctionName: "控制中心",
             // icon: "icon-gerenxinxi",
-             children: [
-          // {
-            //   FunctionAddress: "/personalinfo/basicinfo",
-            //   FunctionID: 1401,
-            //   FunctionName: "体能训练",
-            //   ParentID: 14,
-            //   children: [],
-            // }
+            children: [
+              {
+                FunctionAddress: "/recommend",
+                FunctionID: 1401,
+                FunctionName: "发布/订阅",
+                ParentID: 14,
+                children: [],
+              },
+              {
+                FunctionAddress: "/Control",
+                FunctionID: 1402,
+                FunctionName: "控制状态",
+                ParentID: 14,
+                children: [],
+              },
+              {
+                FunctionAddress: "#",
+                FunctionID: 1403,
+                FunctionName: "位置信息",
+                ParentID: 14,
+                children: [],
+              }
             ]
           },
           {
             FunctionID: 15,
             FunctionName: "日志查询",
             FunctionAddress: "/login",
-          //  icon: "icon-more",
+            //  icon: "icon-more",
             children: []
           },
           {
@@ -134,6 +148,7 @@ export default {
   //#48D1CC
   //#87CEFA, #48D1CC
   background-image: linear-gradient(to bottom, #728ace, #1c7e7c);
+
   .sidebar-menu {
     border: none;
     height: 100%;

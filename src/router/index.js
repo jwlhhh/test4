@@ -11,12 +11,19 @@ const routes = [
     path: "/",
     meta: { activeRoute: "/", navName: "index" },
     redirect: "/login"
+ //   redirect: "/test"
   },
   {
     path: "/login",
     name: "Login",
     meta: { activeRoute: "/login", navName: "login" },
     component: () => import('../views/Login.vue')
+  },
+  {
+    path: "/test",
+    name: "test",
+   // meta: { activeRoute: "/login", navName: "login" },
+    component: () => import('../views/test')
   },
   {
     path: "/index",
@@ -29,6 +36,12 @@ const routes = [
         name: '更多推荐',
         meta: { activeRoute: "/recommend", navName: "更多推荐" },
         component: () => import('../views/more/More.vue')
+      },
+      {
+        path: '/Control',
+        name: '控制状态',
+        meta: { activeRoute: "/Control", navName: "控制状态" },
+        component: () => import('../views/more/Zhuangtai.vue')
       },
 
     ]

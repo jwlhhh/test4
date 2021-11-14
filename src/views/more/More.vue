@@ -19,6 +19,7 @@
         </el-col>
         <el-col :span="12">
 <!--          <div id="chart" style="width: 100%; height: 500px"/>-->
+          <Dingyue></Dingyue>
         </el-col>
       </el-row>
     </div>
@@ -30,6 +31,7 @@
 import {getUserInfo} from "@api/common/common.js"
 
 import Control from "@components/control/Control";
+import Dingyue from "@components/control/Dingyue";
 export default {
   name: "More",
   data() {
@@ -38,7 +40,8 @@ export default {
     };
   },
   components:{
-    Control
+    Control,
+    Dingyue
   },
   methods: {
   //   drawChart() {
